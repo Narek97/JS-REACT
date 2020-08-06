@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+$bgColor:#b6a9a9;
+$color:rgb(0, 255, 106);
+
+.block:not(.first){
+    background: $bgColor;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+@mixin font {
+    font-size: 1.1em;
+    color:$color;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#centralBlock{
+    padding: 30px;
+
+    ul{
+        list-style: none;
+        color: red;
+       a{
+        @include font;
+        text-decoration: none;
+
+        &:hover{
+            color: cadetblue;
+        }
+       } 
+    }
+
+    
+}
