@@ -1,0 +1,25 @@
+// shabloni(mixin)
+@mixin font($fontW: light, $color: red) {
+  font-size: $textSize;
+  font-weight: $fontW;
+  font-family: Arial, Helvetica, sans-serif;
+  color: $color;
+}
+
+// parametrer stana
+@mixin padd($color, $padd...) {
+  padding: $padd;
+}
+
+@mixin link($cols) {
+  // uslovnie operatori
+  @if ($cols>=5) {
+    color: aqua;
+  } @else {
+    color: rgb(255, 255, 255);
+  }
+
+  &:visited {
+    color: lawngreen;
+  }
+}

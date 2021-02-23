@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+}
+
+.container {
+    border: 6px solid #000000;
+    display: flex;
+    /*flex-direction: row-reverse;!* divery irar koxq hakaraka dasavorum*!*/
+    /*flex-direction: column;!* divery irar tak qchelu hamar*!*/
+    /*flex-direction: column-reverse;!* divery irar tak hakarak qchelu hamar*!*/
+
+    /*flex-wrap: wrap; !*responsiv anelu hamar, ete tex chka divy qchi taky *!*/
+
+    /*flex-flow: column-reverse wrap;!* direction u wrapy irar het ogtagortelu hamar *!*/
+
+    /*justify-content: center;!* divery kentron berelu hamar *!*/
+    /*justify-content: flex-end;!* divery aj berelu hamar *!*/
+    /*justify-content: space-between;!* divery havasar irarich bajanelu hamar  patin kpat*!*/
+    /*justify-content: space-around;!* divery havasar irarich bajanelu hamar  patin chkpat*!*/
+    /*justify-content: space-evenly ;!* divery havasar irarich bajanelu hamar  patic eli havasar**/
+
+    /*height: 800px;*/
+    /*align-items: flex-start; !* divery hegti chap chi anum u verevuma dnum *!*/
+    /*align-items: flex-end; !* divery hegti chap chi anum u nergevuma dnum *!*/
+    /*align-items: center; !* divery hegti chap chi anum u meshtexuma dnum *!*/
+    /*align-items: baseline; !*flexi meji diverin pading taly vor azdi teche chi azdum*!*/
+
+    /*height: 800px;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: stretch;!*responsivi vaxt divery voronq tx chen anum takna qchum u chapy poqranuma es grum enq vor nuyn chapi qchi taky *!*/
+
+
+}
+
+.flex-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+.item-1 {
+    background-color: #B4BF35;
+    /*padding-bottom: 3rem;*/
+}
+
+.item-2 {
+    background-color: #B95F21;
+    /*padding-bottom: 5rem;*/
+
+}
+
+.item-3 {
+    background-color: #1C4C56;
+    /*font-size: 3rem;*/
+    /*order: 1;!*bolor divery unen default order 0 ete meki ordery myusi tvich meta iran beruma bolorch araj*!*/
+}
+
+.item-4 {
+    background-color: #CfB276;
+}
+
+.item-5 {
+    background-color: #6B0803;
+    flex-grow: 1;/*ete flexi divum azat tex ka zbaxechnum et hatvaty*/
+    /*karanq myus itmnerine tanq u tarber tver bolorin iranch chapov kbashxi azat tarachqy*/
+}
+
+.item-6 {
+    background-color: #1C4C56;
+
+}
+
+.item-7 {
+    background-color: #B95F21;
+}
+
+.item-8 {
+    background-color: #01243A;
+}
+
+.item-9 {
+    background-color: #AAD041;
+}

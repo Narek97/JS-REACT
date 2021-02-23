@@ -6,7 +6,7 @@
 4. comp. dinamik kerpov ban cuych talu hamar - {{popoxakani.anuny}}  or. <p>{{title}}</p>
 5. miakomani biding ts -> html - [ ] or. <img [src]="img" alt=""> htmlum img popxakani het kap,   
 6. miakomani biding html-> ts  - ( ) or. <button (click)="onClick()" >click</button> ts um onClick() funkciayi het kap
-7. erkkoxmani binding dra hamar app.module.ts um imporst dasgtum import enq anum FormsModule 
+7. erkkoxmani binding dra hamar app.module.ts um import dashtum import enq anum FormsModule 
 	or. 
 	import {FormsModule} from "@angular/forms";
 	imports: [

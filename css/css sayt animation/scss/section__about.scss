@@ -1,0 +1,59 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+.section__about {
+  overflow: hidden;
+  width: 100%;
+  padding: 15em 0 22em;
+  margin-top: -19vh;
+  background-color: $colorWhite;
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+.section__about--heading {
+  @include headerTextAnimation;
+}
+
+.section__about--container {
+  color: #777;
+  padding: 0 80px;
+  @include flex(center, none, none);
+  div:nth-child(1) {
+    width: 50%;
+    padding-right: 30px;
+    padding-top: 20px;
+    h3 {
+      padding-bottom: 20px;
+    }
+    p {
+      padding-bottom: 40px;
+    }
+  }
+  div:nth-child(2) {
+    padding-left: 30px;
+    width: 50%;
+  }
+}
+
+.section__about--images {
+  position: relative;
+  img {
+    position: absolute;
+    box-shadow: 0.5rem 1rem 2rem #04040433;
+    &:hover {
+      outline: 15px solid $colorGrean57a;
+      outline-offset: 15px;
+      transform: scale(1.1);
+      z-index: 10;
+    }
+    transition: 0.3s;
+  }
+  img:nth-child(2) {
+    top: 15%;
+    right: 0;
+  }
+  img:nth-child(3) {
+    top: 40%;
+    right: 20%;
+  }
+}

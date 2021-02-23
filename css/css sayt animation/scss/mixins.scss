@@ -1,0 +1,39 @@
+@mixin flex($content, $items, $direction) {
+  display: flex;
+  justify-content: $content;
+  align-items: $items;
+  flex-direction: $direction;
+}
+
+@mixin bgStyle {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+@mixin headerTextAnimation {
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 2em;
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem #04040433;
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+  }
+  transition: 0.2s;
+}
+@mixin defoultButton($bgColor, $color) {
+  width: 250px;
+  padding: 20px;
+  border-radius: 40px;
+  border: none;
+  background-color: $bgColor;
+  color: $color;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

@@ -1,0 +1,66 @@
+@import './mixins.scss';
+@import './variables.scss';
+
+// psevdo elementner kam psevdo klasner tallis enq sench orinak &:hover{},&:after{}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.block:not(.first) {
+  @include padd(blue, 55px 40px 20px 90px);
+  background-color: $bgColor;
+  height: 200px;
+  width: $blockWidth;
+  margin-bottom: 20px;
+}
+
+.first {
+  background-color: $bgColor;
+  height: 100px;
+  margin-bottom: 20px;
+}
+// .........................
+
+// sgrupirovka
+#central_block {
+  padding: 50px;
+  //nor devov
+  ul {
+    list-style: none;
+    display: inline-block;
+
+    li {
+      float: left;
+      // color: red;
+      // li i meji a -n
+      a {
+        @include font(italic, rgba(12, 145, 223, 0.8));
+
+        &:hover {
+          color: #e20dd0;
+        }
+      }
+      // cenc sxala baych hnaravor
+      // a:hover{
+      //   color: #e20dd0
+      // }
+    }
+  }
+  // bloki meji a -n
+  a {
+    @include font(inherit);
+  }
+}
+
+// hin devov
+// #central_block ul {
+//   list-style: none;
+// }
+
+#central_block {
+  a {
+    @include link(2);
+    text-decoration: none;
+  }
+}

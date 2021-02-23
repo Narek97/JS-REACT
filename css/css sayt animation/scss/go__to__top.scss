@@ -1,0 +1,16 @@
+#go__to__top {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: $colorGrean57a;
+  box-shadow: 0px 0px 3px #06772b;
+  color: $colorWhite;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}

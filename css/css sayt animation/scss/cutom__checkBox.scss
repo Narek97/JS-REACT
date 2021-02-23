@@ -1,0 +1,55 @@
+@import './variables.scss';
+
+.section__book__check {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid $colorGrean57a;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 3.5px;
+  left: 3.8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: $colorGrean57a;
+}

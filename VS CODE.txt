@@ -5,3 +5,7 @@ Ctrl+W => ejy pakelu hamar
 Ctrl+P => ejy man galu u gnalu hamar
 Ctrl+F => poisk anelu hamar
 Ctrl+S => kody format(dzelu) anelu hamar
+
+
+
+firacode - style
